@@ -1,0 +1,197 @@
+<html></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM checkpoint</title>
+    <link rel="stylesheet" href="/domCheckpoint/style.css" />
+    <script
+      src="https://kit.fontawesome.com/0bc1cf895d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <ul class="nav-bar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li>
+          <a href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+        </li>
+      </ul>
+    </header>
+    <section>
+      <!-- preselected items list -->
+      <div class="heading">
+        <h1>Your Preselected items</h1>
+        <p>
+          Your order is eligible for free shipping (Lagos only, excluding large
+          items)
+        </p>
+      </div>
+      <div class="container">
+        <div class="i-phone">
+          <div>
+            <img
+              class="phone-img"
+              src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/54/243917/1.jpg?6844"
+              alt="i phone"
+            />
+          </div>
+          <div>
+            <h4>
+              seller:
+              <img
+                class="gomycode"
+                src="https://gomycodewebsite.blob.core.windows.net/website/img/black_Logo_342868e838_129748d4cd.svg"
+                alt=""
+              />
+            </h4>
+            <h4>Iphone 12 6.1 inches-4GB RAM, 64GB ROM</h4>
+            <button class="heart"><i class="fas fa-heart"></i></button>
+            <a class="deletion" href=""> <i class="far fa-trash-alt"></i></a>
+          </div>
+        </div>
+        <div class="quantity">
+          <h4 id="quantity-el">Quantity:</h4>
+          <p id="count-el">0</p>
+          <button id="incrementBtn1" onclick="incrementBtn1()">+</button>
+          <button id="decrementBtn1" onclick="decrementBtn1()">-</button>
+        </div>
+        <div class="price">#500.000</div>
+      </div>
+      <!-- shoes section -->
+      <div class="ball-box">
+        <div class="i-phone">
+          <div>
+            <img
+              class="phone-img"
+              src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/98/032393/1.jpg?2488"
+              alt="sneakers"
+            />
+          </div>
+          <div>
+            <h4>
+              seller:
+              <img
+                class="gomycode"
+                src="https://gomycodewebsite.blob.core.windows.net/website/img/black_Logo_342868e838_129748d4cd.svg"
+                alt=""
+              />
+            </h4>
+            <h4>Spalding NBA GOLD Basket Ball</h4>
+            <button class="heart"><i class="fas fa-heart"></i></button>
+            <button class="remove"><i class="far fa-trash-alt"></i></button>
+          </div>
+        </div>
+        <div class="quantity">
+          <h4 id="quantity-el">Quantity:</h4>
+          <p id="count-e">0</p>
+          <button id="incrementBtn" onclick="incrementBtn2()">+</button>
+          <button id="decrementBtn" onclick="decrementBtn2()">-</button>
+        </div>
+        <div class="price">#200.000</div>
+      </div>
+      <!-- airpod section -->
+      <!-- <div class="air-box">
+        <div class="i-phone">
+          <div>
+            <img
+              class="phone-img"
+              src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/80/055676/1.jpg?0766"
+              alt="airpod"
+            />
+          </div>
+          <div>
+            <h4>
+              seller:
+              <img
+                class="gomycode"
+                src="https://gomycodewebsite.blob.core.windows.net/website/img/black_Logo_342868e838_129748d4cd.svg"
+                alt=""
+              />
+            </h4>
+            <h4>Airpods Pro With Noise Cancellation - White</h4>
+            <button class="heart"><i class="fas fa-heart"></i></button>
+            <a class="deletion" href=""> <i class="far fa-trash-alt"></i></a>
+          </div>
+        </div>
+        <div class="quantity">
+          <h4 id="quantity-el">Quantity:</h4>
+          <p id="count-el">0</p>
+          <button id="incrementBtn" onclick="incrementBtn()">+</button>
+          <button id="decrementBtn" onclick="decrementBtn()">-</button>
+        </div>
+        <!-- touch screen watch -->
+      <!-- </div>
+      <div class="smart-box">
+        <div class="i-phone">
+          <div>
+            <img
+              class="phone-img"
+              src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/98/237454/1.jpg?2925"
+              alt="sneakers"
+            />
+          </div>
+          <div>
+            <h4>
+              seller:
+              <img
+                class="gomycode"
+                src="https://gomycodewebsite.blob.core.windows.net/website/img/black_Logo_342868e838_129748d4cd.svg"
+                alt=""
+              />
+            </h4>
+            <h4>Touch Screen Business Watch</h4>
+            <button class="heart"><i class="fas fa-heart"></i></button>
+            <a class="deletion" href=""> <i class="far fa-trash-alt"></i></a>
+          </div>
+        </div>
+        <div class="quantity">
+          <h4 id="quantity-el">Quantity:</h4>
+          <p id="count-el">0</p>
+          <button id="incrementBtn" onclick="incrementBtn()">+</button>
+          <button id="decrementBtn" onclick="decrementBtn()">-</button>
+        </div>
+      </div> -->
+      <!-- sneakers section -->
+      <!-- <div class="sneakers-box">
+        <div class="i-phone">
+          <div>
+            <img
+              class="phone-img"
+              src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/57/182997/1.jpg?1885"
+              alt="sneakers"
+            />
+          </div>
+          <div>
+            <h4>
+              seller:
+              <img
+                class="gomycode"
+                src="https://gomycodewebsite.blob.core.windows.net/website/img/black_Logo_342868e838_129748d4cd.svg"
+                alt=""
+              />
+            </h4>
+            <h4>Men sneakers Sports Casual Footwear</h4>
+            <button class="heart"><i class="fas fa-heart"></i></button>
+            <a class="deletion" href=""> <i class="far fa-trash-alt"></i></a>
+          </div>
+        </div>
+        <div class="quantity">
+          <h4 id="quantity-el">Quantity:</h4>
+          <p id="count-el">0</p>
+          <button id="incrementBtn" onclick="incrementBtn()">+</button>
+          <button id="decrementBtn" onclick="decrementBtn()">-</button>
+        </div>
+      </div> -->
+    </section>
+    <script src="/domCheckpoint/main.js"></script>
+  </body>
+</html>
